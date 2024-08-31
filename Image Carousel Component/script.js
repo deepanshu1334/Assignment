@@ -13,7 +13,7 @@ function showSlide(index) {
   const offset = -index * 100;
   document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
 
-  // Update the indicators
+  // Updating  the indicators
   indicators.forEach((indicator, i) => {
     indicator.classList.toggle('active', i === index);
   });

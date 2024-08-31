@@ -7,10 +7,10 @@ accordionSec.forEach((section) => {
   header.addEventListener('click', () => {
     const content = section.querySelector('.accordion-content');
 
-    // Toggle the 'show' class to either show or hide the content
+    
     content.classList.toggle('show');
 
-    // Close other sections
+    // Closing other sections
     accordionSec.forEach((otherSection) => {
       if (otherSection !== section) {
         const otherContent = otherSection.querySelector('.accordion-content');

@@ -6,12 +6,12 @@ const restartBtn = document.getElementById('restart-btn');
 
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-// Handling  guess submission
+// Handling  guess Number submission
 submitBtn.onclick = function () {
   const guess = parseInt(input.value);
 
   if (isNaN(guess) || guess < 1 || guess > 100) {
-    feedback.textContent = 'Please enter a valid number between 1 and 100.';
+    feedback.textContent = 'Please Put a valid number between 1 and 100.';
     return;
   }
 
