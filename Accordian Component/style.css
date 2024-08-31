@@ -1,0 +1,68 @@
+/* Remove unnecessary margin and padding from browser*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+  /*Selecting accourdian*/
+.accordion {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+ 
+.accordion-section {
+    margin-bottom: 5px; 
+}
+  
+  
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: #333; */
+    background-color: rgb(54, 206, 100);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+  /* selceting Accordion content */
+.accordion-content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 0; 
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+    opacity: 0;  
+}
+  
+  
+.accordion-content.show {
+    height: auto;  
+    opacity: 1;  
+    margin-bottom: 20px;  
+    animation: accordion-open 0.5s ease-in-out;
+}
+
+/* applying aniamtion */
+@keyframes accordion-open {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    } 
+}
+  
